@@ -1,13 +1,13 @@
 {combine_css path="themes/bootstrapdefault/admin/css/admin.css"}
 <div class="titrePage">
-    <h2>{'Bootstrap Darkroom'|@translate} {$TABSHEET_TITLE}</h2>
+    <h2>{'Bootstrap Darkroom Home'|@translate} {$TABSHEET_TITLE}</h2>
 </div>
 <div id="configContent" style="margin: 0 auto; max-width: 420px">
     <h3>{'Bootstrap Darkroom Home'|@translate}</h3>
 
     <h4>{'Version'|@translate}: 1.5.16</h4>
 
-    <h5>{'By'|@translate}: <a href="https://github.com/kitsguru/piwigo-bootstrap-darkroom">Jeff Shields</a></h5>
+    <h5>{'Modified By'|@translate}: <a href="https://github.com/kitsguru/piwigo-bootstrap-darkroom">Jeff Shields</a></h5>
     <h5>{'Based on Bootstrap Default by'|@translate}: <a href="https://philio.me">Phil Bayfield</a></h5>
 
     <p>{'A mobile-ready theme based on Boostrap Default'|@translate}</p>

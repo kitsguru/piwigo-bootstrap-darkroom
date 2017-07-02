@@ -1,4 +1,4 @@
-{combine_css path="themes/bootstrap_darkroom/admin/css/admin.css"}
+{combine_css path="themes/bootstrap_darkroom_home/admin/css/admin.css"}
 {combine_script id='common' load='footer' path='admin/themes/default/js/common.js'}
 <div class="titrePage">
     <h2>Bootstrap Darkroom {$TABSHEET_TITLE}</h2>
@@ -30,7 +30,7 @@
                 <dt>Bootswatch</dt><dd>{'A color theme from'|@translate} <a href="https://bootswatch.com">https://bootswatch.com</a></dd>
                 <dt>Material</dt><dd>Material design {'from'|@translate} <a href="http://fezvrasta.github.io/bootstrap-material-design">http://fezvrasta.github.io/bootstrap-material-design</a></dd>
                 <dt>Default</dt><dd>{'Bootstrap\'s default theme'|@translate}</dd>
-                <dt>{'None'|@translate}</dt><dd>{'No color theme'|@translate}</dd> 
+                <dt>{'None'|@translate}</dt><dd>{'No color theme'|@translate}</dd>
             </dl>
         </fieldset>
         <fieldset class="mainConf">
@@ -246,7 +246,7 @@ function getMaterialColors() {
   var cur_color = '{$theme_config_extra->material_color}';
   select_material.show();
   label_material.show();
-  
+
   for (var i = 0; i < lcolor; i++) {
     select_material.append($("<option />")
           .val(colors[i])
@@ -270,7 +270,7 @@ $(document).ready(function() {
     preview.html('<img src="themes/bootstrap_darkroom/admin/img/' + $('select[name=bootstrap_theme]').val() + '.png" style="padding: 10px 0;"/>');
     preview.show();
   }
- 
+
   link_target = $('select[name=thumbnail_linkto]').val();
   if (!$('input[name=photoswipe]').is(':checked') && link_target !== 'photoswipe') {
     $('select[name=thumbnail_linkto]').val('picture');
