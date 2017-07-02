@@ -1,5 +1,8 @@
-Piwigo Bootstrap Darkroom
+Piwigo Bootstrap Darkroom with Home
 -------------------
+Forked from https://github.com/tkuther/piwigo-bootstrap-darkroom
+Adds a Home -> back to main site link in menu
+
 A mobile-ready Piwigo theme based on [Bootstrap Default](https://github.com/Philio/bootstrapdefault) by Phil Bayfield.
 
 ### Features

@@ -66,7 +66,7 @@ $lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Bootstrap Darkrooms sk
 $lang['Bootstrap theme'] = 'Bootstrap-tema';
 $lang['Bootstrap\'s default theme'] = 'Bootstraps standardtema';
 $lang['Bootswatch theme'] = 'Bootswatch-tema';
-$lang['Bug reports and features requests'] = 'Fejlrapporter og udvidelsesønsker';
+$lang['Bug reports and feature requests'] = 'Fejlrapporter og udvidelsesønsker';
 $lang['By'] = 'Af';
 $lang['Category page display'] = 'Visning af kategoriside';
 $lang['Center mode'] = 'Centreret tilstand';
@@ -77,4 +77,6 @@ $lang['Display categories as Bootstrap media wells'] = 'Vis kategorier som Boots
 $lang['Display the currently selected image in the middle. Works best with infinite looping enabled.'] = 'Vis det aktuelt valgt billede i midten. Fungerer bedst når uendelig løkke er aktiveret.';
 $lang['Enable PhotoSwipe fullscreen slideshow. Disable if you prefer to use Plugins like Fotorama or Piwigo\'s default slideshow.'] = 'Aktiver PhotoSwipe-fuldskærmsslideshow. Deaktiver hvis du foretrækker at anvende plugins så som Fotorama eller Piwigos standardslideshow.';
 $lang['A color theme from'] = 'Et farvetema fra';
-$lang['Display category description in grid view'] = 'Vis kategoribeskrivelse i gittervisning';
+
+$lang['Display category description in grid view'] = 'Vis albumbeskrivelse i gittervisning';
+$lang['Fullscreen'] = 'Hele skærmen';

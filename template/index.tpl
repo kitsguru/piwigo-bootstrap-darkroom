@@ -25,10 +25,14 @@ $('.navmenu').on('show.bs.offcanvas', function() {
     $('#the_page').on('touchmove.bs', function(e) {
         e.preventDefault();
     });
-    if ($('.navbar-contextual.affix-top').length > 0 && $('.jumbotron').length > 0) {
-        $('.navmenu').css('top', $('.navbar-main').height() + $('.jumbotron').outerHeight() - $(document).scrollTop());
-    }
     $('.navbar-main .collapse').collapse('hide');
+    if ($('.navbar-contextual.affix-top').length > 0) {
+        var navmenu_top = $('.navbar-contextual').height();
+        if ($('.jumbotron').length > 0) {
+            navmenu_top = navmenu_top + $('.jumbotron').outerHeight() - $(document).scrollTop();
+        }
+        $('.navmenu').css('top', navmenu_top);
+    }
 });
 $('.navmenu').on('hidden.bs.offcanvas', function() {
     if ($('ul.navmenu-nav').contents().length > 0) {
@@ -89,7 +93,7 @@ $(document).ready(function() {
             <ul class="nav navbar-nav">
 {if !empty($image_orders)}
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="{'Sort order'|@translate}">
                         <span class="glyphicon glyphicon-sort"></span><span class="glyphicon-text">{'Sort order'|@translate}</span><span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
@@ -101,7 +105,7 @@ $(document).ready(function() {
 {/if}
 {if !empty($image_derivatives)}
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="{'Photo sizes'|@translate}">
                         <span class="glyphicon glyphicon-picture"></span><span class="glyphicon-text">{'Photo sizes'|@translate}</span><span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
@@ -163,7 +167,7 @@ $(document).ready(function() {
 {/if}
 {if isset($U_MODE_POSTED) || isset($U_MODE_CREATED)}
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="{'Calendar'|@translate}">
                         <span class="fa fa-calendar"></span><span class="glyphicon-text">{'Calendar'|@translate}</span>
                     </a>
                     <ul class="dropdown-menu">
@@ -187,8 +191,8 @@ $(document).ready(function() {
 {if !empty($PLUGIN_INDEX_BUTTONS)}{foreach from=$PLUGIN_INDEX_BUTTONS item=button}<li>{$button}</li>{/foreach}{/if}
 {if !empty($PLUGIN_INDEX_ACTIONS)}{$PLUGIN_INDEX_ACTIONS}{/if}
 {if ((!empty($CATEGORIES) && !isset($GDThumb)) || (!empty($THUMBNAILS) && !isset($GThumb) && !isset($GDThumb))) && ($theme_config_extra->category_wells == 'never' || ($theme_config_extra->category_wells == 'mobile_only' && get_device() == 'desktop'))}
-                <li id="btn-grid"{if $smarty.cookies.view != 'list'} class="active"{/if}><a href="javascript:;"><span class="glyphicon glyphicon-th"></span></a></li>
-                <li id="btn-list"{if $smarty.cookies.view == 'list'} class="active"{/if}><a href="javascript:;"><span class="glyphicon glyphicon-th-list"></span></a></li>
+                <li id="btn-grid"{if $smarty.cookies.view != 'list'} class="active"{/if}><a href="javascript:;" title="{'Grid view'|@translate}"><span class="glyphicon glyphicon-th"></span></a></li>
+                <li id="btn-list"{if $smarty.cookies.view == 'list'} class="active"{/if}><a href="javascript:;" title="{'List view'|@translate}"><span class="glyphicon glyphicon-th-list"></span></a></li>
 {/if}
             </ul>
         </div>

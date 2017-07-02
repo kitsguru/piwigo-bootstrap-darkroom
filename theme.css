@@ -121,8 +121,13 @@ html, body {
 #thePicturePage #content-spacer { padding-top: 80px; }
 #theCategoryPage #content-spacer { padding-top: 20px; }
 #theCategoryPage { padding-left: 0px !important; }
+#theCategoryPage h4.title { line-height: 1.2em;}
 
 /* Category thumbnails */
+#content {
+  min-height: 100px;
+}
+
 @media (max-width: 767px) {
   #content .col-inner {
     max-width: 520px;
@@ -312,6 +317,10 @@ html, body {
   color: #fff;
 }
 
+.pswp__button {
+  z-index: 2000;
+}
+
 .pswp-video-modal {
   background: url(img/play-circle-white.png) no-repeat center center;
   background-size: 128px 128px;
@@ -370,7 +379,11 @@ a.pswp__share--google:hover {
 #sidebar { z-index: 100; }
 
 /* Video */
-video[poster] { object-fit: cover; }
+#thePicturePage .embed-responsive-16by9 video[poster] { object-fit: cover; }
+
+.embed-responsive-9by16 {
+  padding-bottom: 177.78%;
+}
 
 /* Picture page nav buttons */
 @media (max-width: 320px) {

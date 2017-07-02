@@ -1,7 +1,8 @@
 <?php
 /*
+
 Theme Name: Bootstrap Darkroom Home
-Version: 1.5.10
+Version: 1.5.16
 Description: A mobile-ready & feature-rich theme based on Boostrap Default, with PhotoSwipe full-screen slideshow, Slick carousel on picture page, many color styles thanks to Bootswatch and lots of configuration options. Modified to include home buttonto main site.
 Theme URI: https://github.com/kitsguru/piwigo-bootstrap-darkroom
 Author: Thomas Kuther / Jeff Shields
