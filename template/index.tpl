@@ -70,9 +70,11 @@ $('#content-spacer').addClass('well');
             </button>
             <div class="navbar-brand">
 {if isset($chronology.TITLE)}
-                <a href="{$U_HOME}" title="{'Home'|@translate}"><i class="fa fa-home" aria-hidden="true"></i></a>{$LEVEL_SEPARATOR}{$chronology.TITLE}
+                <a href="/" title="Main Site"><i class="fa fa-home" aria-hidden="true"></i></a> {$LEVEL_SEPARATOR}
+                <a href="{$U_HOME}" title="{'Home'|@translate}"><i class="fa fa-paint-brush" aria-hidden="true"></i></a>{$LEVEL_SEPARATOR}{$chronology.TITLE}
 {else}
-                {$TITLE}
+<a href="/" title="Main Site"><i class="fa fa-home" aria-hidden="true"></i></a>
+                {$LEVEL_SEPARATOR} {$TITLE}
 {if $theme_config_extra->bootstrap_theme == 'bootswatch' || $theme_config_extra->bootstrap_theme == 'material'}
 {footer_script require='jquery'}{strip}
 $(document).ready(function() {

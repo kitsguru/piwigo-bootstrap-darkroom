@@ -4,9 +4,9 @@ if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 
 // Includes
 include_once(PHPWG_ROOT_PATH . 'admin/include/tabsheet.class.php');
-require_once(PHPWG_THEMES_PATH . 'bootstrap_darkroom/include/config.php');
+require_once(PHPWG_THEMES_PATH . 'bootstrap_darkroom_home/include/config.php');
 
-load_language('theme.lang', PHPWG_THEMES_PATH.'bootstrap_darkroom/');
+load_language('theme.lang', PHPWG_THEMES_PATH.'bootstrap_darkroom_home/');
 
 // Constants
 define('THEME_ID', basename(dirname(dirname(__FILE__))));

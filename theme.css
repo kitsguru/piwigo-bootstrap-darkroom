@@ -184,14 +184,14 @@ html, body {
 
 
 /* Info tabs */
-#theImageInfos .tab-pane { margin: 10px 10px; }
-#theImageInfos .table-responsive { border: none; }
-#theImageInfos .table>tbody>tr>td,
-#theImageInfos .table>tbody>tr>th {
-  border-top: none;
-}
-#theImageInfos .table>tbody>tr>th {
-  text-align: right;
+.tab-pane { margin: 0 10px; }
+@media (min-width: 768px) {
+  #infopanel .dl-horizontal dt {
+      width: 220px;
+  }
+  .dl-horizontal dd {
+      margin-left: 240px;
+  }
 }
 
 /* Slick Carousel */

@@ -1,6 +1,7 @@
 <nav class="navbar navbar-default" role="navigation">
     <div class="container">
         <div class="navbar-header">
+         <a href="/" title="Main Site"><i class="fa fa-home" aria-hidden="true"></i></a>
             <div class="navbar-brand"><a href="{$U_HOME}">{'Home'|@translate}</a>{$LEVEL_SEPARATOR}<a href>{'Identification'|@translate}</a></div>
         </div>
     </div>

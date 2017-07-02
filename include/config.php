@@ -6,7 +6,7 @@ require_once(PHPWG_THEMES_PATH . 'bootstrapdefault/include/config.php');
 
 class ExtraConfig {
 
-    const CONF_PARAM = 'bootstrap_darkroom';
+    const CONF_PARAM = 'bootstrap_darkroom_home';
     const CONF_VERSION = 13;
 
     const TYPE_BOOL = 'bool';
